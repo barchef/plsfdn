@@ -114,7 +114,6 @@
 	.topMenu {
 	  overflow: hidden;
 	  margin: 20px;
-	  width: 80%;
 	}
 
 	.topMenu .responsiveIcon {
@@ -211,11 +210,16 @@
             }
         }
 
-
-        @media (max-width: 1020px) {
+	@media (max-width: 1020px) {
             .menuLink {
                 margin: 0 10px;
             }
+        }
+
+        @media (min-width: 1096px) {
+            .topMenu {
+		width: 80%;
+	    }
         }
 
         @media (max-width: 1000px) {
@@ -264,7 +268,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 940px) {
             #topLogo {
                 display: none;
             }
