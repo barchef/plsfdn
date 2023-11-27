@@ -1,0 +1,59 @@
+{
+  "name": "Pulse Bridge",
+  "version": {
+    "major": 2,
+    "minor": 1,
+    "patch": 0
+  },
+  "keywords": ["pulsebridge", "tokens", "trusted"],
+  "logoURI": "https://tokens.app.pulsex.com/images/tokens/0xA1077a294dDE1B09bB078844df40758a5D0f9a27.png",
+  "timestamp": "2023-05-15T20:16:00+0000",
+  "tags": {
+    "priority": {
+      "name": "Priority",
+      "description": "Prioritized tokens for sorting in the bridge UI"
+    },
+    "stablecoin": {
+      "name": "Stablecoin",
+      "description": "Tokens that are fixed to an external asset"
+    }
+  },
+  "tokens": [
+    {
+      "name": "Wrapped Pulse from PulseChain",
+      "chainId": 11155111,
+      "symbol": "WPLS",
+      "decimals": 18,
+      "address": "0x9BA8697A0913BB0b778068e81520Baa97D200b9f",
+      "logoURI": "https://tokens.app.pulsex.com/images/tokens/0x70499adEBB11Efd915E3b69E700c331778628707.png",
+      "tags": ["verified"]
+    },
+    {
+      "name": "DAI Mock",
+      "chainId": 11155111,
+      "symbol": "tDAI",
+      "decimals": 18,
+      "address": "0x53844F9577C2334e541Aec7Df7174ECe5dF1fCf0",
+      "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+      "tags": ["verified"]
+    },
+    {
+      "name": "Wrapped Pulse",
+      "chainId": 369,
+      "symbol": "WPLS",
+      "decimals": 18,
+      "address": "0x70499adEBB11Efd915E3b69E700c331778628707",
+      "logoURI": "https://tokens.app.pulsex.com/images/tokens/0x70499adEBB11Efd915E3b69E700c331778628707.png",
+      "tags": ["verified"]
+    },
+    {
+      "name": "DAI Mock from Sepolia",
+      "chainId": 943,
+      "symbol": "tDAI",
+      "decimals": 18,
+      "address": "0x826e4e896CC2f5B371Cd7Bb0bd929DB3e3DB67c0",
+      "logoURI": "https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png",
+      "tags": ["verified"]
+    }
+  ]
+}

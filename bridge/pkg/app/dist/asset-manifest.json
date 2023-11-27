@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/static/js/main.bb7857e2.js",
+    "static/js/966.8ed86e6f.chunk.js": "/static/js/966.8ed86e6f.chunk.js",
+    "static/js/674.c466a0c3.chunk.js": "/static/js/674.c466a0c3.chunk.js",
+    "static/js/54.6d8aeffc.chunk.js": "/static/js/54.6d8aeffc.chunk.js",
+    "static/js/763.46729828.chunk.js": "/static/js/763.46729828.chunk.js",
+    "static/js/52.1ee1ec0a.chunk.js": "/static/js/52.1ee1ec0a.chunk.js",
+    "static/js/602.7fbd70f5.chunk.js": "/static/js/602.7fbd70f5.chunk.js",
+    "static/js/50.f84a78ae.chunk.js": "/static/js/50.f84a78ae.chunk.js",
+    "static/media/pulsebridge_bg.jpg": "/static/media/pulsebridge_bg.614b33adb9f3b1fb9683.jpg",
+    "static/media/pulse-logo.png": "/static/media/pulse-logo.cd143d27d2ba2871e89e.png",
+    "static/media/no-history.svg": "/static/media/no-history.cc89800ba55dd715aaccbdb809ce3daa.svg",
+    "static/media/claim.svg": "/static/media/claim.7fa0652d8911057bc46c49212137c513.svg",
+    "static/media/loading.svg": "/static/media/loading.03ccb1963f5662261a995cc31d6ade3f.svg",
+    "static/media/logo.svg": "/static/media/logo.cf45a30e35bd4b0f59e966ce95656965.svg",
+    "static/media/metamask-fox.svg": "/static/media/metamask-fox.7db94670ec6dc4d4c6c9e18af96281d8.svg",
+    "index.html": "/index.html",
+    "static/media/search.svg": "/static/media/search.bf04c13d4f96f2a84e425e7354d9c853.svg",
+    "static/media/confirm-transfer.svg": "/static/media/confirm-transfer.3a6feef5fc25379ea7611cd41e900cec.svg",
+    "static/media/blue-tick.svg": "/static/media/blue-tick.31fdcebbda6d58683afa27d0ace78dd1.svg",
+    "static/media/right-arrow.svg": "/static/media/right-arrow.59c7b3bfd9001bc356b4c33e716f9407.svg"
+  },
+  "entrypoints": [
+    "static/js/main.bb7857e2.js"
+  ]
+}
