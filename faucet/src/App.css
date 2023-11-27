@@ -1,0 +1,78 @@
+:root {
+  --bgColor: #000;
+  --logoGradient: linear-gradient(210deg, #00eaff 0%, #0080ff 25%, #8000ff 50%, #e619e6 75%, #f00 100%);
+}
+
+body {
+  background-color: var(--bgColor);
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  padding: 30px 50px;
+  width: 80%;
+  background-color: #fff1;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px #0003;
+  margin-top: 50px;
+  text-align: left;
+  max-width: 500px;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
