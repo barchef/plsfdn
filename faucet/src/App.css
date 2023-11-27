@@ -54,6 +54,130 @@ body {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.divLogo {
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.divMainCardWrapper {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.divMainCard {
+  background: var(--logoGradient);
+  width: 400px;
+  height: 400px; 
+  border-radius: 2%;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  .divMainCard {
+      width: 88%;
+  }
+}
+
+.dripAmount {
+  color: white;
+  text-decoration:underline
+}
+
+.dripCopy {
+  font-family: "Poppins", monospace;
+  color: white;
+  margin-top: 5%; 
+  font-size: 14pt
+}
+
+.divNotice {
+  font-size:8pt; 
+  padding:5px;
+  overflow-wrap:word-break;
+}
+
+.nextDripTime {
+  font-family: "Poppins", monospace; 
+  color: white; 
+  margin-top: -5%;
+  font-size: 10pt;
+}
+
+.btnFoundation {
+  width:60%;
+  float:left;
+  padding: 5px;
+  border-radius: 5%;
+  background: var(--logoGradient);
+  bottom: 2%;
+  left: 50%;
+  font-family: "Courier New", monospace;
+}
+
+.btnFoundation a {
+  color:white;
+  font-weight: bold;
+}
+
+.btnShare {
+  width: 30%;
+  float:right;
+  padding: 5px;
+  border-radius: 5%;
+  background: var(--logoGradient);
+  bottom: 2%;
+  right: 2%;
+  font-family: "Courier New", monospace;
+}
+
+.btnShare a {
+  color:white;
+  font-weight: bold;
+}
+
+.divUsersFed {
+  justify-content: center; 
+  align-items: center;
+}
+
+.divUsersFed strong {
+  border-radius: 2%;
+  padding: 5px;
+  color: black; 
+  background: var(--logoGradient);
+  position: fixed;
+  bottom: 2%;
+  font-family: "Courier New", monospace;
+}
+
+.divChefNote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divChefNote strong {
+  border-radius: 2%;
+  padding: 5px;
+  color: black;
+  position: fixed;
+  bottom: 2%;
+  font-family: "Courier New", monospace;
+}
+
+.divChefNote strong a {
+  margin-left: -100%;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

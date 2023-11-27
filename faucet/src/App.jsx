@@ -140,29 +140,26 @@ function App() {
 
   return (
     <>
-    <div style={{alignItems: 'center', marginTop: '5%', marginBottom: "10%"}}>
+    <div className="divLogo">
       <img src='/images/pls.png' style={{width: '20em'}}/>
-      <strong style={{width: '10em',padding: '5px', color: 'white' }}>Faucet</strong>
+      <strong>Faucet</strong>
     </div>
-      <div style={{ justifyContent: 'center', alignItems: 'center', marginBottom: "5%" }}>
-        <div style={{ background: 'var(--logoGradient)', width: '400px', height: '400px', borderRadius: '2%', border: '1px solid black', padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+      <div className="divMainCardWrapper">
+        <div className="divMainCard">
           <span style={{display: userAddress == null ? 'none' : ''}}>
             Last drip requested (system): <u>{nextEligibleSystemDateString}</u><br />
             Last drip requested (by you): <u>{nextEligibleDateString}</u></span>
-          <h2 style={{color: 'white', textDecoration:'underline'}}>{dripAmount} FREE PLS</h2>
-          <strong style={{display: authUrl == null ? '' : 'none' ,fontFamily: 'Poppins, monospace', color: 'white', marginTop: '5%', fontSize: "14pt"}}>{copy}</strong>
+          <h2 className="dripAmount">{dripAmount} FREE PLS</h2>
+          <strong style={{display: authUrl == null ? '' : 'none'}} className="dripCopy">{copy}</strong>
           <button onClick={() => userAddress == null ? init() : ''} style={{fontFamily: 'Courier New, monospace', display: userAddress == null ? '' : 'none'}}>
             {message}
           </button>
-          <div style={{fontSize:"8pt", padding:"5px", overflowWrap:"word-break"}}>
+          <div className="divNotice">
           To minimize abuse, free PLS are given out just once every 5 minutes. Use the <b>Last drip requested (system)</b> indicator to know when is a good time to try.
           </div>
-          <strong style={{
+          <strong className="nextDripTime" 
+            style={{
             display: timeRemaining > 0 ? '' : 'none' ,
-            fontFamily: 'Poppins, monospace', 
-            color: 'white', 
-            marginTop: '-5%', 
-            fontSize: "10pt"
             }}>
             Your Next Available Drip Time is: <u>{nextEligibleDateString}</u><br />
             <span style={{fontSize:"8pt"}}>{nextEligibleDate}</span>
@@ -175,20 +172,20 @@ function App() {
         </div>
       </div>
 
-      <div style={{width:"60%", float:"left", borderRadius: '2%', padding: '5px', borderRadius: '15%', background: 'var(--logoGradient)',bottom: '2%', left: '50%', fontFamily: 'Courier New, monospace'}}>
-        <a href="https://PulseChainFoundation.org" target="_blank" rel="noopener noreferrer" style={{color: 'white', textDecoration: 'none', fontWeight: "bold"}}>PulseChain Foundation</a>
+      <div className="btnFoundation">
+        <a href="https://PulseChainFoundation.org" target="_blank" rel="noopener noreferrer">PulseChain Foundation</a>
       </div>
-      <div style={{width:"30%", float:"right", borderRadius: '2%', padding: '5px', borderRadius: '15%', background: 'var(--logoGradient)',bottom: '2%', right: '2%', fontFamily: 'Courier New, monospace'}}>
-        <a style={{color: "white", fontWeight: "bold"}} href={url} target="_blank" rel="noopener noreferrer">Share This!</a>
-      </div>
-      
-      <div style={{display: userCount == null ? 'none' : 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <strong style={{borderRadius: '2%', padding: '5px', color: 'black', background: 'var(--logoGradient)',position: 'fixed', bottom: '2%', fontFamily: 'Courier New, monospace'}}>Fed {userCount} users on PulseChain 💪</strong>
+      <div className="btnShare">
+        <a href={url} target="_blank" rel="noopener noreferrer">Share This!</a>
       </div>
       
-      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <strong style={{borderRadius: '2%', padding: '5px', color: 'black',position: 'fixed', bottom: '2%', fontFamily: 'Courier New, monospace'}}>
-          <a href="https://x.com/marlonwilliams" target="_blank" rel="noopener noreferrer" style={{marginLeft:"-100%", color: 'white', textDecoration: 'none', fontWeight: "bold"}}>by BarChef 👨‍🍳</a>
+      <div className="divUsersFed" style={{display: userCount == null ? 'none' : 'flex'}}>
+        <strong>Fed {userCount} users on PulseChain 💪</strong>
+      </div>
+      
+      <div className="divChefNote">
+        <strong>
+          <a href="https://x.com/marlonwilliams" target="_blank" rel="noopener noreferrer">by BarChef 👨‍🍳</a>
         </strong>
       </div>
 
