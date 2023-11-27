@@ -1,0 +1,1 @@
+(self.webpackChunkblockscout_frontend=self.webpackChunkblockscout_frontend||[]).push([[883],{35883:()=>{}}]);
