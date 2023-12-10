@@ -1,0 +1,1 @@
+(self.webpackChunkblockscout_frontend=self.webpackChunkblockscout_frontend||[]).push([[726,320],{52361:()=>{},94616:()=>{}}]);
